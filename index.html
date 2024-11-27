@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form class="form">
+        <div class="impo">
+          <div>
+            <label for="firstName">First Name</label>
+            <input class="input" type="text" id="firstName" name="firstName" />
+            <span class="warn">This field is required</span>
+          </div>
+          <div>
+            <label for="lastName">Last Name</label>
+            <input class="input" type="text" id="lastName" name="lastName" />
+            <span class="warn">This field is required</span>
+          </div>
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input class="input" type="email" id="email" name="email" />
+          <span class="warn">Please enter a valid email address</span>
+        </div>
+        <div class="radio">
+          <label>Query Type</label>
+          <div>
+            <div>
+              <input
+                type="radio"
+                id="general"
+                name="queryType"
+                value="General Enquiry"
+              />
+              <label class="s" for="general">General Enquiry</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="support"
+                name="queryType"
+                value="Support Request"
+              />
+              <label class="s" for="support">Support Request</label>
+            </div>
+          </div>
+          <span class="warn queryTypeWarning">Please select a query type</span>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea class="input" id="message" name="message"></textarea>
+          <span class="warn">This field is required</span>
+        </div>
+        <div class="rules">
+          <div>
+            <input class="input" type="checkbox" id="consent" name="consent" />
+            <label for="consent">
+              I consent to being contacted by the team</label
+            >
+          </div>
+          <span class="warn"
+            >To submit this form, please consent to being contacted</span
+          >
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <!-- <div class="complete">
+      <h3>Message Sent!</h3>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div> -->
+    <script src="app.js"></script>
+  </body>
+</html>
